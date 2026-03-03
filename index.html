@@ -164,7 +164,7 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
     <h1>Votre presence<br><em>en ligne,</em><br>reinventee.</h1>
     <p class="hero-desc">Je cree des sites web qui attirent de vrais clients. Sites vitrines, e-commerce, referencement : tout pour faire grandir votre activite.</p>
     <div class="hero-cta">
-      <a href="#contact" class="btn btn-gold">Demarrer un projet</a>
+      <button id="btnStartProject" class="btn btn-gold">Demarrer un projet</button>
       <a href="#services" class="btn btn-outline">Mes services</a>
     </div>
   </div>
@@ -269,7 +269,7 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
   <div class="contact-cards">
     <a href="#" id="emailCard" class="contact-card">
       <span class="contact-card-icon">&#9993;</span>
-      <div><div class="contact-card-label">Email</div><div class="contact-card-value">maugyloic.10@gmail.com</div></div>
+      <div><div class="contact-card-label">Email</div><div class="contact-card-value"><span class="__cf_email__" data-cfemail="55383420322c393a3c367b6465153238343c397b363a38">[email&#160;protected]</span></div></div>
     </a>
     <a href="tel:+33610166787" class="contact-card">
       <span class="contact-card-icon">&#128241;</span>
@@ -326,7 +326,7 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
     </div>
   </div>
 </div>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
   var cur=document.getElementById('cursor');
   var ring=document.getElementById('cursorRing');
@@ -340,6 +340,7 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
   function close(){ov.classList.remove('open');document.body.style.overflow='';}
 
   document.getElementById('openModalBtn').addEventListener('click',open);
+  document.getElementById('btnStartProject').addEventListener('click',open);
   document.getElementById('openModalBtn2').addEventListener('click',open);
   document.getElementById('closeModalBtn').addEventListener('click',close);
   ov.addEventListener('click',function(e){if(e.target===ov)close();});
@@ -368,10 +369,4 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
     var d=getData();
     var nl='%0D%0A';
     var s=encodeURIComponent('Demande de site web - '+d.ent);
-    var b=encodeURIComponent('Bonjour Loic,')+nl+nl+encodeURIComponent('Prenom : '+d.nom)+nl+encodeURIComponent('Entreprise : '+d.ent)+nl+encodeURIComponent('Type de site : '+d.type)+nl+encodeURIComponent('Budget : '+d.budget)+nl+nl+encodeURIComponent('Description :')+nl+encodeURIComponent(d.desc);
-    window.location.href='mailto:'+em+'?subject='+s+'&body='+b;
-  });
-})();
-</script>
-</body>
-</html>
+    var b=encodeURIComponent('Bonjour Loic,')+nl+nl+encodeURIComponent('Prenom : '+d.nom)+nl+encodeURIComponent('Entreprise : '+d.ent)+nl+encodeURIComponent('Type de site : '+d.type)+nl+encodeURICo
